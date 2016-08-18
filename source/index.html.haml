@@ -1,9 +1,8 @@
 
 %header#header
-  .image
+  %div{:style => "background:url('images/bg-header.jpg'); width:1000px; height:490px; background-size: cover;     background-attachment: fixed"}
     %nav.navbar.navbar-white
       .container-fluid
-        / Brand and toggle get grouped for better mobile display
         .navbar-header
           %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
             %span.sr-only Toggle navigation
@@ -11,10 +10,10 @@
             %span.icon-bar
             %span.icon-bar
           %a.navbar-brand{:href => "#"}
-            %font{:color => "white"}
-              .vitality
-                VITALITY
-        / Collect the nav links, forms, and other content for toggling
+
+            %li
+              %a{:href => "#"}
+                %div.vitality{:style => "background:url('images/logo.png'); width:110px; height:30px; background-size: cover;"}
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
 
           %ul.nav.navbar-nav.navbar-right
@@ -38,6 +37,14 @@
               %a{:href => "#"}
                 %font{:color => "white"}
                   Contact
+    %div.tasima{:style => "background:url('images/profile.png'); width:130px; height:130px; background-size: cover;"}
+    .vitalityy
+      VITALITY
+    %hr
+    %hr
+    %h4
+      %font{:color => "white"} By Start Bootstrap
+
 
 %section#about
 
@@ -466,17 +473,41 @@
   %br
   .about2
     Examples of our work which represent our design and marketing capabilities.
+
   #carousell-example-generic.carousel.slide{"data-ride" => "carousel"}
     .carousel-inner{:role => "listbox"}
       .item.active
-        %div{:style => "background:url(http://www.aquamakeover.com/wp-content/uploads/2016/07/Service_website.png); width:1000px; height:500px; background-size: cover"}
+        %div{:style => "background:url(http://www.neswebdesign.com/wp-content/uploads/2016/01/web-designing.jpg); width:1000px; height:500px; background-size: cover;opacity: 0.7; "}
+          .col-xs-12.col-sm-3.col-md-3.col-lg-2
+            .client-logo
+              %img{:alt => "", :src => "images/logo-1.png"}
+            .project-name
+              PROJECT NAME
+            .web
+              Branding, Website Design
+            %hr
+            %hr
+            =link_to "#", :class => 'btn btn-white' do
+              VIEW DETAILS
+              %i.fa.fa-long-arrow-right{"aria-hidden" => "true"}
+
       .carousel-caption
       .item
-        %div{:style => "background:url(http://www.prologicwebdesign.com/blog/wp-content/uploads/2016/02/Web-design-18.jpg); width:1000px; height:500px; background-size: cover"}
+        %div{:style => "background:url(http://www.aerotechdigitalmarketing.com/wp-content/uploads/Website-Design-1.jpg); width:1000px; height:500px; background-size: cover; ;"}
+          .col-xs-12.col-sm-3.col-md-3.col-lg-2
+            .client-logo
+              %img{:alt => "", :src => "images/logo-2.png"}
+            .project-name
+              PROJECT NAME
+            .web
+              Branding, Website Design
+            %hr
+            %hr
+            =link_to "#", :class => 'btn btn-white' do
+              VIEW DETAILS
+              %i.fa.fa-long-arrow-right{"aria-hidden" => "true"}
       .carousel-caption
-      .item
-        %div{:style => "background:url(https://worldwise.net/assets/img/responsive-web-design-lq.jpg); width:1000px; height:500px; background-size: cover;"}
-      .carousel-caption
+
     %a.left.carousel-control{"data-slide" => "prev", :href => "#carousell-example-generic", :role => "button"}
       %span.fa.fa-chevron-left{"aria-hidden" => "true"}
     %a.right.carousel-control{"data-slide" => "next", :href => "#carousell-example-generic", :role => "button"}
@@ -499,22 +530,54 @@
   %a{:href => "#",:class => 'btn btn-black'}
     %span
       WEB
+
   .container
     .row
       .col-xs-4.col-sm-3.col-md-3.col-lg-2
         .margin
-          %div{:style => "background:url(http://degisikicatlar.com/wp-content/uploads/2016/03/iphone5se.jpg); width:200px; height:200px; background-size: cover"}
+          %div{:style => "background:url(http://degisikicatlar.com/wp-content/uploads/2016/03/iphone5se.jpg); width:200px; height:150px; background-size: cover"}
       .col-xs-4.col-sm-3.col-md-3.col-lg-2
         .margin
-          %div{:style => "background:url(http://s5.favim.com/orig/53/apple-computer-laptop-luxury-Favim.com-490204.jpg); width:200px; height:200px; background-size: cover;"}
+          %div{:style => "background:url(http://www.identitywebdesign.com/images/slideshow/slide1.jpg); width:200px; height:150px; background-size: cover;"}
 
       .col-xs-4.col-sm-3.col-md-3.col-lg-2
         .margin
-          %div{:style => "background:url(http://s2.favim.com/orig/33/apple-computer-ipod-laptop-purple-Favim.com-265580.jpg); width:200px; height:200px; background-size: cover;"}
+          %div{:style => "background:url(http://s2.favim.com/orig/33/apple-computer-ipod-laptop-purple-Favim.com-265580.jpg); width:200px; height:150px; background-size: cover;"}
+    .row
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://baef480c1b9a59094802-bb7fd020772cbf1cd099f3b22c712b0b.r79.cf2.rackcdn.com/932d80777c8cf5562b386d777c818723.jpg); width:200px; height:150px; background-size: cover"}
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://resimdiyari.com/_data/i/upload/2012/10/14/20121014183753-5a8ae0b6-me.jpg); width:200px; height:150px; background-size: cover;"}
 
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(https://oag.ca.gov/sites/all/files/agweb/images/cybersecurity/cyber-threats-mobile.jpg); width:200px; height:150px; background-size: cover;"}
+    .row
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://c1038.r38.cf3.rackcdn.com/group5/building41400/media/kerw_pp_140311_11.jpeg); width:200px; height:150px; background-size: cover"}
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://2.bp.blogspot.com/-hi0Hsbbj4rM/VqUm55yTQII/AAAAAAAABQE/kUqIVTbUeVU/s1600/%25C3%2587ikolatal%25C4%25B1%2Bunsuz%2Bkek%2Btarifi.jpg); width:200px; height:150px; background-size: cover;"}
 
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://www.jasmin2020.com/image/data/duvar_resmi/asma-kopru-YAN-DR-18.jpg); width:200px; height:150px; background-size: cover;"}
+    .row
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://motosiklethaberleri.net/wp-content/uploads/2011/11/susurluk.jpg); width:200px; height:150px; background-size: cover"}
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://www.hasansutcuoglu.com/wp-content/uploads/2014/09/elma_dergisi_iphone6plus-4.jpg); width:200px; height:150px; background-size: cover;"}
+
+      .col-xs-4.col-sm-3.col-md-3.col-lg-2
+        .margin
+          %div{:style => "background:url(http://www.portakalagaci.com/photos/uncategorized/2008/01/18/kekcikler.jpg); width:200px; height:150px; background-size: cover;"}
+%section#workk
   #carouselll-example-generic.carousel.slide{"data-ride" => "carousel"}
-
     %ol.carousel-indicators
       %li.active{"data-slide-to" => "0", "data-target" => "#carouselll-example-generic"}
       %li{"data-slide-to" => "1", "data-target" => "#carouselll-example-generic"}
@@ -568,7 +631,6 @@
               sed sunt non obcaecati vero ipsam aut fugit?
               .carousel-caption
 
-              .carousel-caption
 
         .col-xs-12.col-sm-3.col-md-3.col-lg-2
           .image2
